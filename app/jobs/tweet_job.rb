@@ -3,7 +3,7 @@ class TweetJob < ApplicationJob
 
   def perform(tweet) 
     #####DEbuging
-    #binding.irb   #the type it in console "TweetJob.perform_now(Tweet.last)"
+    binding.irb   #the type it in console "TweetJob.perform_now(Tweet.last)"
     #  Reschedule tweets to earlier time
     return if tweet.published?
 
