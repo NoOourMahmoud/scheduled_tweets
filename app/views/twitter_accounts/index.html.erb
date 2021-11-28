@@ -3,7 +3,7 @@
 
     <%= link_to "Connect a Twitter account", "/auth/twitter", method: :post, class: "btn btn-primary" %>
 </div>
-
+<%= Current.user.twitter_accounts.count %>
 <% @twitter_accounts.each do |twitter_account|%>
     <div class= "d-flex align-items-center mb-4">
         <div class= "me-4">
